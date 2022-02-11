@@ -1,11 +1,14 @@
-# Vue 3 + Typescript + Vite
+# Mammon
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A simple frontend intended to help me along with Vue 3 and stuff.
 
-## Recommended IDE Setup
+Mammon is intended to show you how much money was on your bank account at a certain point in time.
+Basically a graph plotting the amount of money in the account over a given date.
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+There will be a backend so you add more entries
 
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+Expected functionality:
+* Show a graph correlating the amount of money with a certain date.
+* Show a total trend for the displayed timeframe. 
+* Allow you to select a certain timeframe
+* Input a new entry and send it to the backend
