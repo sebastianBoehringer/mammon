@@ -6,12 +6,17 @@
     "plugin:vue/vue3-recommended",
     "prettier",
   ],
-  parser: "@typescript-eslint/parser",
-  parserOptions: { project: ["./tsconfig.json"] },
-  plugins: ["@typescript-eslint"],
+  parser: "vue-eslint-parser",
+  parserOptions: { 
+    parser: "@typescript-eslint/parser",
+    project: ["./tsconfig.json"],
+    extraFileExtensions: [".vue"] 
+  },
+  plugins: ["@typescript-eslint", "vue"],
   rules: {},
 
   env: {
     node: true,
+    "vue/setup-compiler-macros": true,
   },
 };
